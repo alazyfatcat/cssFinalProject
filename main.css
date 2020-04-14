@@ -1,0 +1,149 @@
+
+
+  body,html{
+      height: 100%;
+      margin: 0;
+  }
+
+  .div-list{
+    background-color:#fff ;
+    max-width: 500px;
+    height: 100%;
+    -webkit-box-shadow: 1px 2px 20px 1px rgba(0,0,0,0.76);
+    -moz-box-shadow: 1px 2px 20px 1px rgba(0,0,0,0.76);
+    box-shadow: 1px 2px 20px 1px rgba(0,0,0,0.76);
+    display: block;
+    float: left;
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    position: sticky;
+    color: #000000;
+  }
+  .div-list input{
+    border-radius: 5px 5px 5px 5px;
+  }
+  .div-list button {
+    border-radius: 50px 50px 50px 50px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+  }
+
+  
+
+  .container{
+    background-image: url('img/happy1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.s-container{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+    font-family: 'Comic Neue',sans-serif,Arial, Helvetica, cursive;
+    margin-top: 30px;
+}
+
+.s-container h1{
+    font-size: 60px;
+    color: #ab9e9e;
+    text-align: center;
+    margin: 0;
+
+}
+
+.s-container p{
+    font-size: 25px;
+    color: #ab9e9e;
+    text-align: left;
+    margin: 0;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+.abc{
+    background: #0000008a;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+  footer{
+      bottom: 0;
+      width: 100%;
+      height: 2.5rem; 
+      margin-top: 20px;
+      text-align: center;
+      color: #ab9e9e;
+  }
+  .divide{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      color: #000000;
+      font-family: 'Baloo Tamma 2',sans-serif,Arial, Helvetica, cursive;
+  }
+ 
+  .complete {
+    background: url(img/colorful-watercolor-brush-stroke-banner-16.png);
+    background-repeat: no-repeat;
+    background-size: 100% 95%;
+    padding: 8px 0;
+    color: black;
+    }
+
+    .delete {
+      background: url(img/colorful-watercolor-brush-stroke-banner-12.png);
+      background-repeat: no-repeat;
+      background-size: 100% 95%;
+      padding: 8px 0;
+      color: black;
+      }
+
+/* Source code for the list style: https://codepen.io/equinusocio/pen/OqpBKJ*/
+
+
+/* List element */
+li {
+  counter-increment: index; 
+  display: -webkit-box; 
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+
+/* Element counter */
+li::before {
+  content: counters(index, ".", decimal-leading-zero);
+  font-size: 1.5rem;
+  text-align: right;
+  font-weight: bold;
+  min-width: 50px;
+  padding-right: 12px;
+  font-feature-settings: "num";
+  /* font-variant-numeric: tabular-nums; */
+  align-self: flex-start;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(aquamarine), to(orangered));
+  background-image: linear-gradient(to bottom, aquamarine, orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Element separation */
+li + li + li + li + li {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
